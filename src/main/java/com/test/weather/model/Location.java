@@ -14,7 +14,6 @@ public class Location {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
     private Long id;
-
     private String cityName;
     private String countryName;
     private double lat;

@@ -11,7 +11,6 @@ import org.springframework.web.server.ResponseStatusException;
 @Service
 @Slf4j
 public class GeoService {
-
     @Value("${api.secret}")
     private String apiGeoSecret;
 

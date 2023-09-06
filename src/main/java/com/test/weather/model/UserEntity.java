@@ -22,6 +22,7 @@ public class UserEntity {
     private List<Query> userHistory = new ArrayList<>();
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Location> favoriteLocations = new ArrayList<>();
+
     public UserEntity(String username) {
         this.username = username;
     }
