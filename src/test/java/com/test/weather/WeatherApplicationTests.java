@@ -1,6 +1,5 @@
 package com.test.weather;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.test.weather.controller.AdviceController;
 import com.test.weather.controller.UserController;
 import com.test.weather.controller.WeatherController;
@@ -23,7 +22,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.Collections;
 import java.util.Date;
-import java.util.List;
 import java.util.Optional;
 
 import static org.hamcrest.Matchers.hasSize;
@@ -35,20 +33,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class WeatherApplicationTests {
     private MockMvc mockMvc;
     private String authToken;
-    private UserEntity testUser = new UserEntity();
+    private final UserEntity testUser = new UserEntity();
     private final String testUsername = "John";
 
     @Mock
     private JwtUtil jwtUtil;
-    @Mock
-    private QueryFilter queryFilter;
 
     @Mock
     private UserServiceImpl userServiceImpl;
     @Mock
     private UserRepository userRepository;
-    @Mock
-    private WeatherService weatherService;
     @Mock
     private Authentication authentication;
     @InjectMocks
