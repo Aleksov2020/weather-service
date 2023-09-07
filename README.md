@@ -15,14 +15,14 @@
 - [Endpoints](#endpoints)
 
 ## Технологии
-- [Java 18](https://www.gatsbyjs.com/)
-- [Spring Boot 6.0](https://www.typescriptlang.org/)
-- [Spring Web](https://www.typescriptlang.org/)
-- [Spring Data](https://www.typescriptlang.org/)
-- [Spring Security](https://www.typescriptlang.org/)
-- [PostgreSQL](https://www.typescriptlang.org/)
-- [OpenAPI](https://www.typescriptlang.org/)
-- [Docker](https://www.typescriptlang.org/)
+- Java 18
+- Spring Boot 6.0
+- Spring Web
+- Spring Data
+- Spring Security
+- PostgreSQL
+- OpenAPI
+- Docker
 
 ## Использование
 Указываем API KEY для доступа к [Weather API](https://openweathermap.org) в файле application.properties
@@ -58,7 +58,3 @@
 @RequestParam country String (required = false) - можем указать для точного выбора города  
 
 Используется для получения погодных условий в нужной локации.
-
-
-## FAQ 
-Если потребители вашего кода часто задают одни и те же вопросы, добавьте ответы на них в этом разделе.
