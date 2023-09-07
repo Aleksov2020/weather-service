@@ -2,7 +2,6 @@ package com.test.weather.controller;
 
 import com.test.weather.model.Location;
 import com.test.weather.model.Query;
-import com.test.weather.model.UserEntity;
 import com.test.weather.service.UserServiceImpl;
 import com.test.weather.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
