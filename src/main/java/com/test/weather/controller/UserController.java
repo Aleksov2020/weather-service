@@ -42,14 +42,14 @@ public class UserController {
     }
 
     @PostMapping ("favorite")
-    public ResponseEntity<UserEntity> setLocationToFavorite(@RequestParam(name = "city") String cityName,
+    public ResponseEntity<List<Location>> setLocationToFavorite(@RequestParam(name = "city") String cityName,
                                             @RequestParam(name = "country", required = false) Optional<String> countryName ) {
         return ResponseEntity.ok(
                 userServiceImpl.addFavoriteLocationToUser(
                         SecurityContextHolder.getContext().getAuthentication().getName(),
                         cityName,
                         countryName
-                )
+                ).getFavoriteLocations()
         );
     }
 
